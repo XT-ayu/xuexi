@@ -1,0 +1,26 @@
+ai-exercise-mvp/
+├── README.md                 # 项目说明
+├── .gitignore                # 忽略 node_modules 等
+├── client/                   # 前端 Vue3 项目
+│   ├── package.json
+│   ├── vite.config.js
+│   └── src/
+│       ├── main.js
+│       ├── router/index.js
+│       ├── views/
+│       │   ├── Login.vue
+│       │   ├── Practice.vue
+│       │   ├── Result.vue
+│       │   └── WrongBook.vue
+│       └── stores/userStore.js
+│
+└── server/                   # 后端 Express + SQLite
+    ├── package.json
+    ├── server.js
+    ├── routes/
+    │   ├── auth.js
+    │   └── practice.js
+    ├── models/
+    │   └── db.js             # SQLite 初始化
+    └── data/
+        └── questions.json    # 初始题库
